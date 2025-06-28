@@ -13,9 +13,9 @@ const Contact = () => (
         <h2>Contact Me</h2>
         <p>Email: lishen.madusha@gmail.com</p>
         <p className="flex justify-center items-center">
-            <a className="links px-[0.5%]" href="https://www.instagram.com/lishen_99/" target="_blank"><Image className="zoom" src="/icons/instagram.png" width={30} height={30} alt="Instagram"/></a>
-            <a className="links px-[0.5%]" href="https://github.com/Lishen99" target="_blank"><Image className="zoom" src="/icons/github.png" width={30} height={30} alt="GitHub"/></a>
-            <a className="links px-[0.5%]" href="https://www.linkedin.com/in/lishen-amaraweera-88507a291/" target="_blank"><Image className="zoom" src="/icons/linkedin.png" width={30} height={30} alt="LinkedIn"/></a>
+            <a className="links px-[0.5%]" href="https://www.instagram.com/lishen_99/" target="_blank"><Image className="zoom" src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icons/instagram.png`} width={30} height={30} alt="Instagram"/></a>
+            <a className="links px-[0.5%]" href="https://github.com/Lishen99" target="_blank"><Image className="zoom" src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icons/github.png`} width={30} height={30} alt="GitHub"/></a>
+            <a className="links px-[0.5%]" href="https://www.linkedin.com/in/lishen-amaraweera-88507a291/" target="_blank"><Image className="zoom" src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icons/linkedin.png`} width={30} height={30} alt="LinkedIn"/></a>
         </p>
     </motion.section>
 );
