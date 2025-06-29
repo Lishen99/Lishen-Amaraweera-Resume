@@ -23,7 +23,7 @@ const Projects = () => (
             {projects.map((project, index) => (
                 <motion.div
                     key={index}
-                    className="card bg-[rgba(255,255,255,0.1)] p-[20px] w-full max-w-[300px] m-[10px] rounded-[8px] backdrop-filter backdrop-blur-md"
+                    className="card bg-[rgba(255,255,255,0.1)] p-[20px] w-full max-w-[300px] m-[10px] rounded-[8px] backdrop-filter backdrop-blur-[5px]"
                     initial={{ boxShadow: '0 4px 8px rgba(0,0,0,0.5)' }}
                     whileHover={{
                         y: -10,

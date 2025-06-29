@@ -6,7 +6,6 @@ import Certifications from '../components/Certifications';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import BackToTopButton from '../components/BackToTopButton';
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </div>
-      <BackToTopButton />
     </>
   );
 }
