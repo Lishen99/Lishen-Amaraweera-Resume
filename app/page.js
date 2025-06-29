@@ -10,16 +10,18 @@ import BackToTopButton from '../components/BackToTopButton';
 
 export default function Home() {
   return (
-    <div className="relative z-10">
-      <Navbar />
-      <Header />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Certifications />
-      <Contact />
-      <Footer />
+    <>
+      <div className="relative z-10">
+        <Navbar />
+        <Header />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Certifications />
+        <Contact />
+        <Footer />
+      </div>
       <BackToTopButton />
-    </div>
+    </>
   );
 }
