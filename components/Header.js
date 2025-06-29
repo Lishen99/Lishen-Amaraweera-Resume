@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 const Header = () => {
   const name = "Lishen Madusha Amaraweera";
-  const title = "Computer Science Student | Robotics & Computer Vision Enthusiast";
+  const title = "Computer Science Student @ TMU | Robotics & Computer Vision Enthusiast";
 
   const [displayName, setDisplayName] = useState('');
   const [displayTitle, setDisplayTitle] = useState('');
