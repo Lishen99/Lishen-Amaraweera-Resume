@@ -207,7 +207,6 @@ section {
 }
 
 .card {
-  background: #333;
   padding: 20px;
   width: 100%;
   max-width: 300px;
@@ -225,7 +224,6 @@ section {
 /* Footer Section */
 footer {
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 

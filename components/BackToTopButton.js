@@ -40,7 +40,7 @@ const BackToTopButton = () => {
         >
           <button
             onClick={scrollToTop}
-            className="bg-black bg-opacity-50 text-[var(--accent-color)] p-4 rounded-full shadow-lg hover:bg-opacity-70 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-50"
+            className="bg-black bg-opacity-50 text-[var(--accent-color)] p-5 rounded-full shadow-lg hover:bg-opacity-70 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-50 backdrop-filter backdrop-blur-sm"
             aria-label="Scroll to top"
           >
             <FaArrowUp />
