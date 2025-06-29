@@ -2,11 +2,12 @@
 import { motion } from 'framer-motion';
 
 const projects = [
-    { title: 'Blog Website', description: 'Dynamic blog platform with Python back end and responsive front end.' },
-    { title: 'Home Power Management System', description: 'Console application in Java for monitoring and optimizing home energy use.' },
-    { title: 'Arduino-Based Sensor Monitoring', description: 'Real-time sensor data collection and LCD display using Arduino.' },
-    { title: 'Web-Based Portfolio', description: 'Personal portfolio site using HTML, CSS, JavaScript and GitHub Pages.' },
-    { title: 'ARC Assembly Calculator', description: 'Calculator implemented in ARC assembly supporting arithmetic operations.' }
+    { title: 'Project Matilda', description: 'A mini tank-like robot with a 5-DOF arm, similar to a bomb disposal robot. Powered by ESP32 boards and a Raspberry Pi, it can be controlled via radio or PC with an all-in-one Python script for camera feeds and control.' },
+    { title: 'Blog Website', description: 'Developed a full-stack blog platform featuring a Python Flask backend for API services and a responsive frontend for dynamic content display and user interaction.' },
+    { title: 'Home Power Management System', description: 'Designed and implemented a console-based application in Java for comprehensive monitoring and optimization of residential energy consumption, including data logging and analysis.' },
+    { title: 'Arduino-Based Sensor Monitoring', description: 'Created an embedded system using Arduino to collect real-time data from various sensors, displaying live readings on an LCD interface and enabling basic data logging capabilities.' },
+    { title: 'Web-Based Portfolio', description: 'This personal resume website, built with Next.js and Tailwind CSS, showcases my skills, experience, and projects. It features a responsive design and interactive elements.' },
+    { title: 'ARC Assembly Calculator', description: 'Developed a calculator application entirely in ARC assembly language, capable of performing fundamental arithmetic operations with direct memory manipulation and register-based computations.' }
 ];
 
 const Projects = () => (
@@ -22,7 +23,17 @@ const Projects = () => (
             {projects.map((project, index) => (
                 <motion.div
                     key={index}
-                    className="card bg-[#333] p-[20px] w-full max-w-[300px] m-[10px] rounded-[8px] shadow-[0_4px_8px_rgba(0,0,0,0.5)] transition-transform duration-300 ease-in-out hover:translate-y-[-10px] hover:scale-[1.05] hover:shadow-[0_12px_24px_rgba(0,0,0,0.7)]"
+                    className="card bg-[#333] p-[20px] w-full max-w-[300px] m-[10px] rounded-[8px]"
+                    initial={{ boxShadow: '0 4px 8px rgba(0,0,0,0.5)' }}
+                    whileHover={{
+                        y: -10,
+                        scale: 1.05,
+                        boxShadow: '0 12px 24px rgba(0,0,0,0.7), 0 0 0 3px var(--accent-color)',
+                        transition: {
+                            duration: 0.3,
+                            ease: 'easeOut',
+                        },
+                    }}
                 >
                     <h3><strong className="large-strong">{project.title}</strong></h3>
                     <p>{project.description}</p>

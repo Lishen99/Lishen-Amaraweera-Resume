@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 
 const experiences = [
-    { title: 'Volunteer Robotics Developer', description: 'Assisting with the development, maintenance, and improvement of robotics systems as part of an academic research lab.' },
+    { title: 'Volunteer Robotics Developer - Computational Public Safety Lab', description: 'Assisting with the development, maintenance, and improvement of robotics systems as part of an academic research lab at TMU.' },
     { title: 'Toronto MetRobotics Mechanical Team', description: 'Collaborated on building and testing robotic components and troubleshooting mechanical and software challenges.' },
     { title: 'Senior Prefect | Vidura College Colombo', description: 'Led school events, managed logistics, and supported fundraising efforts.' },
     { title: 'Media Coordinator & Editor | Vidura College ICT & Science Societies', description: 'Created promotional materials, organized teams, and assisted with backstage technical operations.' }

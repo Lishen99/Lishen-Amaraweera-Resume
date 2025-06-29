@@ -28,7 +28,15 @@ const Skills = () => {
       <h2>Skills</h2>
       <div className="skills-container flex flex-wrap justify-evenly mt-[20px]">
         {skills.map((skill) => (
-          <div key={skill.name} className="skill w-full max-w-[30%] mx-[10px] my-0 px-[0.5%]">
+          <motion.div
+            key={skill.name}
+            className="skill w-full max-w-[30%] mx-[10px] my-0 px-[0.5%]"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: '0 0 15px rgba(var(--accent-color-rgb), 0.6)',
+              transition: { duration: 0.2 },
+            }}
+          >
             <h3>{skill.name}</h3>
             <div className="progress-bar bg-[#444] block h-[10px] rounded-[5px] overflow-hidden">
               <motion.span
@@ -40,7 +48,7 @@ const Skills = () => {
                 transition={{ duration: 1.5, ease: 'easeOut' }}
               />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </motion.section>
