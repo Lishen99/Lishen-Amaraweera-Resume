@@ -15,11 +15,8 @@ body {
   overflow-x: hidden;
   font-family: 'Arial', sans-serif;
   background: rgb(7,7,7);
-  position: relative;
   margin: 0;
   padding: 0;
-  height: 100%;
-  display: block;
 }
 
 :root {
@@ -69,7 +66,7 @@ nav ul li a:hover {
 
 /* Header Section */
 header {
-  min-height: calc(100vh - 60px); /* 100vh minus estimated navbar height */
+  min-height: calc(100dvh - 60px); /* 100dvh minus estimated navbar height */
   display: flex;
   flex-direction: column;
   justify-content: center;
